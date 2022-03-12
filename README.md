@@ -19,9 +19,9 @@
 <img width="857" alt="new_branch" src="https://user-images.githubusercontent.com/4271266/158013733-0f09f197-455e-4a33-9b2e-4479de1ff9b8.png">
 
 ### После того, как вы сделали задание (можете делать любое кол-во коммитов). Делаете push
-<img width="857" alt="new_branch" src="https://user-images.githubusercontent.com/4271266/158013782-dca8c0a3-1495-4ba3-860b-c9b8adf1f21b.png">
+<img width="802" alt="push" src="https://user-images.githubusercontent.com/4271266/158014219-33bc580f-b999-4e7f-b9a4-557214d18e55.png">
 
-### Далее нужно перейти в этот репозиторий https://github.com/krottv/AN14 и нажать на кнопку pull request. Далее выбрать из какой ветки и куда. Должно быть krottv/master <- student/14kotlin-intro
+### Далее нужно перейти в этот репозиторий https://github.com/krottv/AN14 и нажать на зелёную кнопку "create pull request". Далее выбрать из какой ветки и куда. Должно быть krottv/master <- student/14kotlin-intro
 <img width="1618" alt="pull request" src="https://user-images.githubusercontent.com/4271266/158014023-4620de80-9bf5-404e-9cf1-183bb36c2733.png">
 
 ### Всё! Далее, чтобы поправить работу, можно просто делать пуш у себя. Pull Request обновится автоматически
