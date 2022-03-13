@@ -32,6 +32,23 @@ interface ShapePrinter {
 val predefinedCollection = listOf<Shape>(Square(10), Circle(4), Triangle(1, 1, 1), Rectangle(2, 10), Rectangle(10, 9))
 ```
 
+### Реализовать интерфейсы Set, Map упрощённым способом.
+
+Внутри можно использовать List или посложнее Array. Надо помнить, что ключи map и элементы set уникальны должны быть. Можно делать очень неоптимизированный алгоритм, главное сделать.
+
+``` kotlin
+interface SimplifiedSet<Element> {
+	fun put(element: Element)
+	fun toString(): String
+}
+
+interface SimplifiedMap<Key, Value> {
+	fun put(key: Key, value: Value)
+	fun get(key: Key): Value
+	fun toString(): String
+}
+```
+
 
 ### Задача со звёздочкой, будет полезно для собеседований, про устройство массива спрашивают постоянно
 
