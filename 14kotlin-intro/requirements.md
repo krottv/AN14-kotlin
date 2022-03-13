@@ -49,6 +49,17 @@ interface SimplifiedMap<Key, Value> {
 }
 ```
 
+### Реализовать собственный LinkedList
+
+``` kotlin
+interface LinkedList<Element> {
+	fun get(position: Int)
+	fun set(position: Int, element: Element)
+	fun add(element: Element)
+	fun remove(position: Int)
+}
+```
+
 
 ### Задача со звёздочкой, будет полезно для собеседований, про устройство массива спрашивают постоянно
 
@@ -58,6 +69,7 @@ interface SimplifiedMap<Key, Value> {
 interface CustomArrayList<Element> {
 	fun get(position: Int)
 	fun set(position: Int, element: Element)
+	fun add(element: Element)
 	fun remove(position: Int)
 	fun removeMultiple(positions: IntRange).
 }
