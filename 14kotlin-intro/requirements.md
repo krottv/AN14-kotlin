@@ -11,7 +11,7 @@ interface Shape {
 }
 ```
 
-Надо создать 3 иммутабельных data класса: Square(height), Rectangle(width, height), Circle(radius), Triangle(firstSide, secondSide, thirdSide)
+Надо создать 4 иммутабельных data класса: Square(height), Rectangle(width, height), Circle(radius), Triangle(firstSide, secondSide, thirdSide)
 
 Каждый класс должен реализовать интерфейс Shape. Метод square должен вычислять площадь фигуры. Кроме Triangle. У triangle нам нужно выбросить GeometryException("Не достаточно данных для вычисления"). GeometryException нужно создать и унаследовать от Exception
 
@@ -31,6 +31,18 @@ interface ShapePrinter {
 ``` kotlin 
 val predefinedCollection = listOf<Shape>(Square(10), Circle(4), Triangle(1, 1, 1), Rectangle(2, 10), Rectangle(10, 9))
 ```
+
+### Релизовать интерфейс ArrayList 
+
+``` kotlin
+interface CustomArrayList<Element> {
+	fun get(position: Int)
+	fun add(element: Element)
+	fun removeLast()
+	fun trimToSize()
+}
+```
+
 
 ### Реализовать интерфейсы Set, Map упрощённым способом.
 
@@ -60,22 +72,6 @@ interface LinkedList<Element> {
 }
 ```
 
-
-### Задача со звёздочкой, будет полезно для собеседований, про устройство массива спрашивают постоянно
-
-Реализовать собственный динамический массив - ArrayList, с методами 
-
-``` kotlin
-interface CustomArrayList<Element> {
-	fun get(position: Int)
-	fun set(position: Int, element: Element)
-	fun add(element: Element)
-	fun remove(position: Int)
-	fun removeMultiple(positions: IntRange).
-}
-```
-
-Суть задачи в том, чтобы реализовать оптимизированное удаление из массива. Удаление одного элемента происходит при помощи System.arraycopy()
 
 Пост подробно про то, как устроен ArrayList - https://habr.com/ru/post/128269/
 
