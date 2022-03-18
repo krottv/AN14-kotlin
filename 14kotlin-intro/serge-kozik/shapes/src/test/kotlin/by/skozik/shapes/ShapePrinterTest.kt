@@ -8,16 +8,22 @@ import kotlin.test.BeforeTest
 import kotlin.test.assertFailsWith
 import kotlin.test.assertTrue
 
+const val AREA_FORMAT = "area=%s"
+
 class ShapePrinterTest {
 
-    private val AREA_FORMAT = "area = %s";
     private var predefinedCollection: Collection<Shape>? = null
     private val printer = ShapePrinter()
 
     @BeforeTest
     fun initMocks() {
         predefinedCollection =
-            listOf<Shape>(Square(10), Circle(4), Triangle(1, 1, 1), Rectangle(2, 10), Rectangle(10, 9))
+            listOf<Shape>(
+                Square(10),
+                Circle(4),
+                Triangle(1, 1, 1),
+                Rectangle(2, 10),
+                Rectangle(10, 9))
     }
 
     @Test

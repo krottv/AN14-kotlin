@@ -7,4 +7,10 @@ class Triangle(val firstSide : Int, val secondSide: Int, val thirdSide: Int) : S
     override fun square(): Int {
         throw GeometryException("Not enough data to calculate square.")
     }
+
+    override fun toString(): String {
+        return "Triangle(firstSide=$firstSide, secondSide=$secondSide, thirdSide=$thirdSide, area=${square()})"
+    }
+
+
 }

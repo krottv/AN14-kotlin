@@ -5,19 +5,11 @@ import by.skozik.shapes.api.IShapePrinter
 import by.skozik.shapes.api.Shape
 
 class ShapePrinter : IShapePrinter {
-    override fun printShape(shape: Shape) : String {
-        val shapeName = when (shape) {
-            is Circle -> "Circle radius = ${shape.radius}"
-            is Rectangle -> "Rectangle ${shape.height}x${shape.width}"
-            is Square -> "Square side = ${shape.height}"
-            is Triangle -> "Triangle sides = ${shape.firstSide}; ${shape.secondSide}; ${shape.thirdSide}"
-            else -> "Unknown shape"
-        }
-        val area : String? = try {
-            "${shape.square()}"
+    override fun printShape(shape: Shape): String {
+        return try {
+            shape.toString()
         } catch (e: GeometryException) {
-            e.message
+            e.message ?: "Geometry exception"
         }
-        return "Shape $shapeName area = $area"
     }
 }
