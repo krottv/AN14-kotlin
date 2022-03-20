@@ -23,6 +23,7 @@ build/
 14kotlin-intro/serge-kozik/.gradle
 14kotlin-intro/serge-kozik/build
 14kotlin-intro/serge-kozik/shapes/build
+14kotlin-intro/serge-kozik/bank/build
 
 # Local configuration file (sdk path, etc)
 local.properties
