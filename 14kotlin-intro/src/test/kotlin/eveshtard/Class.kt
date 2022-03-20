@@ -1,8 +1,10 @@
-package elenaveshtard
+package eveshtard
+
+import eveshtard.lab14.Square
 
 fun main(args: Array<String>) {
     val str1 = " 123"
-    val sq1 = Square(2, "bgkgk")
+    val sq1 = Square(height = 2, name = "Anton")
     println(message = sq1.extensionString(str1))
     convert { it -> it.toString() }
 }

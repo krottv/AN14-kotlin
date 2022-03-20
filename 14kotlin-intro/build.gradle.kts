@@ -13,6 +13,8 @@ repositories {
 }
 
 dependencies {
+    implementation("org.testng:testng:7.1.0")
+    implementation("org.testng:testng:7.1.0")
     testImplementation(kotlin("test"))
     implementation(kotlin("test"))
 }
