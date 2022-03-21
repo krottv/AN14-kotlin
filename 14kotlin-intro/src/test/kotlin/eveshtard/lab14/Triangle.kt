@@ -6,11 +6,8 @@ class Triangle(val sideFirst: Int, val sideSecond: Int, val sideThird: Int) : IS
     }
 
     override fun view(): String {
-        val view: String = try {
-            square().toString()
-        } catch (e: Exception) {
-            e.message.toString()
-        }
-        return view
+        return square().toString()
     }
+
+
 }
